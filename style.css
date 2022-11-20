@@ -1,0 +1,214 @@
+/* 
+font for project:
+
+font-family: 'Outfit', sans-serif;
+Weights: 300, 400, 600 
+
+### Primary Color
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral color
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+*/
+
+:root {
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-hr: hsl(215, 32%, 27%);
+    --title: hsl(0, 0%, 100%);
+    --eth: hsl(178, 100%, 50%);
+    --p: hsl(215, 51%, 70%);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--main-bg);
+    font-family: 'Outfit', sans-serif;
+}
+
+#card {
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    background-color: var(--card-bg);
+    padding: 20px;
+}
+
+#cardImage {
+    position: relative;
+    width: 310px;
+    height: 314px;
+}
+
+#imgPrincipal{    
+    width: 100%;
+    border-radius: 8px;
+}
+
+#cardImage:hover img {
+    display: block;
+    
+}
+
+#imgView {    
+    padding: 130px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(0, 255, 247, 0.483);    
+    visibility: visible;
+    position: absolute;
+    cursor: pointer;
+}
+
+#cardInfo {
+    position: relative;
+    height: 200px;
+    margin: 20px auto;
+}
+
+#cardInfoTexts {
+    margin-bottom: 20px;
+}
+
+#cardInfoTexts a {
+    color: var(--title);
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;       
+}
+
+#cardInfoTexts a:hover{
+    color: var(--eth);
+}
+
+#cardInfoTexts p {
+    color: var(--p);
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#cardInfoSubText {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#cardInfoSubText img{
+    margin-right: 5px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
+
+.item img {
+    height: 100%;
+}
+.eth{
+    font-weight: 600;
+    color: var(--eth);
+    font-size: 18px;
+}
+
+.days {
+    color: var(--p);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#hr { 
+    margin-bottom: 20px;
+}
+
+hr {
+    background-color: var(--line-hr);    
+    margin: auto;
+    height: 2px;
+}
+
+#cardInfoUser {
+    display: flex;
+    align-items: center;
+}
+
+#cardInfoUser img {
+    width: 35px;
+    border: 1px solid var(--title);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#cardInfoUser p {
+    font-weight: 300;
+    color: var(--p);   
+    font-size: 18px; 
+}
+
+#cardInfoUser a {
+    color: var(--title);
+    text-decoration: none;
+}
+
+#cardInfoUser a:hover {
+    color: var(--eth);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    color: var(--title);
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-size: 16px;
+}
+
+
+@media (max-width: 450px) {
+
+    #imgView {
+        visibility: hidden;
+        display: none;
+    }
+    .attribution {
+        font-size: 10px;
+    }
+
+    .attribution a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 321px) {
+
+    
+    #imgView {
+        visibility: hidden;
+        display: none;
+    }
+
+    .attribution {
+        font-size: 12px;
+    }
+
+    .attribution a {
+        font-size: 14px;
+    }
+}
