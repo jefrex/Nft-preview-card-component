@@ -118,7 +118,7 @@ body{
 .item img {
     height: 100%;
 }
-.eth{
+.ether{
     font-weight: 600;
     color: var(--eth);
     font-size: 18px;
