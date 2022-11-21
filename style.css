@@ -167,7 +167,7 @@ hr {
     color: var(--eth);
 }
 
-.attribution {
+footer {
     position: absolute;
     bottom: 0;
     color: var(--title);
@@ -187,12 +187,17 @@ hr {
         visibility: hidden;
         display: none;
     }
+
+    footer {
+        text-align: center;
+        width: 265px;
+    }
     .attribution {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     .attribution a {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 
@@ -204,11 +209,16 @@ hr {
         display: none;
     }
 
+    footer {
+        text-align: center;      
+        height: auto;  
+    }
+
     .attribution {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .attribution a {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
